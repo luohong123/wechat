@@ -1,1 +1,13 @@
 /**首页**/
+.slide-image {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.flex-wrp{
+    display:flex;
+    flex-direction:row;
+}
+.flex-item{
+    width:25%;
+}

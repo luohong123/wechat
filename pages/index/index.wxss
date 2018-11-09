@@ -1,5 +1,4 @@
 /**index.wxss**/
-@import '/lib/styles/icon.wxss';
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -61,14 +60,17 @@ input {
 .login-icon-wrap {
   position:absolute;
   width:36px;
-  left:8px;
-  top:5px;
+  left:10rpx;
+  top:10rpx;
   height:36px;
   border-radius:50%;
   background-color:#EE2B7A;
+  text-align:center;
+  line-height:36px;
 }
 .login-icon-wrap .iconfont{
   color:#ffffff;
+  font-size:50rpx;
 }
 .footer{
   position:fixed;

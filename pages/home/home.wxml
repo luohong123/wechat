@@ -1,4 +1,54 @@
 <!--首页-->
+
+<view class="section">
+  <view class="section__title">flex-direction: row</view>
+  <view class="flex-wrp">
+    <view class="flex-item bc_green">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+    <view class="flex-item bc_red">
+        <icon class="iconfont icon-mima1"></icon>
+        <text>投资理财</text>
+    </view>
+  </view>
+</view>
 home
 简介:查工资,发工资，就用我爱查工资条
 个税计算公式
