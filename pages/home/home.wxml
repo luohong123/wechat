@@ -1,56 +1,17 @@
 <!--首页-->
 
 <view class="section">
-  <view class="section__title">flex-direction: row</view>
-  <view class="flex-wrp">
-    <view class="flex-item bc_green">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
-    </view>
-    <view class="flex-item bc_red">
-        <icon class="iconfont icon-mima1"></icon>
-        <text>投资理财</text>
+  <view class="section__title">
+    <image src="{{swiper}}" class="home-image" mode="cover"></image>
+  </view>
+  <view class="flex-wrap">
+    <view class="flex-item" wx:for="{{navs}}">
+        <image src="{{item.image}}" class="nav-image"></image>
+        <text class="nav-text">{{item.text}}</text>
     </view>
   </view>
 </view>
-home
-简介:查工资,发工资，就用我爱查工资条
+<!--简介:查工资,发工资，就用我爱查工资条
 个税计算公式
 利息计算公式
 我的假勤
@@ -63,4 +24,4 @@ home
 帮助
 意见反馈
 
-角色选择 ：员工、财务人员、管理员
+角色选择 ：员工、财务人员、管理员-->

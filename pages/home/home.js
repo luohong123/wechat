@@ -4,14 +4,39 @@ const app = getApp()
 
 Page({
     data: {
-        imgUrls: [
-          '/images/swiper1.jpg',
-          '/images/swiper2.png',
-          '/images/swiper3.jpg'
-        ],
-        indicatorDots: true,
-        autoplay: false,
-        interval: 3000,
-        duration: 1000
+        navs:[{
+          image:"/images/daikuan.png",
+          text:"查工资条",
+          url:""
+        },{
+          image:"/images/licai.png",
+          text:"发工资",
+          url:""
+        },{
+          image:"/images/suiyicun.png",
+          text:"投资理财",
+          url:""
+        },{
+          image:"/images/tahangqia.png",
+          text:"投资理财",
+          url:""
+        },{
+          image:"/images/tongzhicundan.png",
+          text:"投资理财",
+          url:""
+        },{
+          image:"/images/zhuanzhanghuikuan.png",
+          text:"更多",
+          url:""
+        },{
+          image:"/images/zhuanzhanghuikuan.png",
+          text:"更多",
+          url:""
+        },{
+          image:"/images/zhuanzhanghuikuan.png",
+          text:"更多",
+          url:""
+        }],
+        swiper:"/images/home-bg.png"
       },
 })

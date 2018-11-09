@@ -47,7 +47,6 @@ Page({
     })
   }, 
   goLoginPageHome: function(e) {
-    console.log("ll")
     wx.switchTab({
       url: "../home/home"
     })
