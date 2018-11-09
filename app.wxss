@@ -1,0 +1,24 @@
+/**app.wxss**/
+@import 'lib/styles/icon.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 80rpx;
+  box-sizing: border-box;
+} 
+button{
+  border-radius:50rpx;
+}
+button[type=primary] {
+  background-color:#EE2B7A;
+}
+
+.button-hover[type=primary] {
+  background-color:#EE2B7A;
+}
+.page{
+  padding:40rpx 80rpx;
+}

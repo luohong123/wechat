@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/wages/wages",
+    "pages/count/count",
+    "pages/profile/profile",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath":"images/home.png",
+      "selectedIconPath":"images/home-selected.png"
+    }, {
+      "pagePath": "pages/wages/wages",
+      "text": "工资",
+      "iconPath":"images/gongzi.png",
+      "selectedIconPath":"images/gongzi-selected.png"
+    }, {
+      "pagePath": "pages/count/count",
+      "text": "统计",
+      "iconPath":"images/tongji.png",
+      "selectedIconPath":"images/tongji-selected.png"
+    }, {
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath":"images/profile.png",
+      "selectedIconPath":"images/profile-selected.png"
+    }]
+  }
+}

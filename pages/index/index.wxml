@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{login}}" mode="cover"></image>
+      <text class="userinfo-nickname"></text>
+    </block>
+  </view>
+   <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <form bindsubmit="goLoginPageHome" bindreset="formReset" class="login-form">
+    <view class="section login-input">
+      <label class="login-icon-wrap">
+        <icon class="iconfont icon-xingmingyonghumingnicheng"></icon>
+      </label>
+      <input name="input" type="text" placeholder="请输入员工号" />
+    </view>
+    <view class="section login-input login-input-mt">
+      <label class="login-icon-wrap"> 
+        <icon class="iconfont icon-mima1" style="color:red;font-size:20px;"></icon>
+      </label>
+      <input name="password" password="true" placeholder="请输入密码" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit" type="primary">登录</button>
+    </view>
+  </form>
+  <text class="footer">版权归北京东软越通软件技术有限公司所有</text>
+</view>

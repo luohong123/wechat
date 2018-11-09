@@ -1,0 +1,81 @@
+/**index.wxss**/
+@import '/lib/styles/icon.wxss';
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa; 
+}
+
+.usermotto {
+
+}
+.login-input{
+  position:relative;
+}
+.login-input input{
+  padding:8px 0 10px 55px;
+
+}
+.login-input .login-icon{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.login-input-mt{
+  margin-top:40rpx;
+}
+.btn-area{
+  width:100%;
+  margin-top:100rpx;
+}
+.btn-area button{
+  width:100%;
+  display:block;
+  border-radius:50rpx;
+}
+input {
+  border:1rpx solid #eeeeee;
+  border-radius:50rpx;
+}
+.login-form{
+  width:100%;
+}
+.user-motto{
+  color:#EE2B7A;
+  font-size:30px;
+  font-weight:700;
+  margin:80rpx 0;
+  display:block;
+}
+.login-icon-wrap {
+  position:absolute;
+  width:36px;
+  left:8px;
+  top:5px;
+  height:36px;
+  border-radius:50%;
+  background-color:#EE2B7A;
+}
+.login-icon-wrap .iconfont{
+  color:#ffffff;
+}
+.footer{
+  position:fixed;
+  left:0;
+  bottom:20rpx;
+  width:100%;
+  font-size:14px;
+  color:#999999;
+  text-align:center;
+}

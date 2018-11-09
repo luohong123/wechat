@@ -1,0 +1,26 @@
+<!--个人信息-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">image</text>
+    <text class="page__desc">图片</text>
+  </view>
+   <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">设置</navigator>
+  </view>
+   <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">收藏</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">关于我们</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">修改密码</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">绑定手机号</navigator>
+  </view>
+  <view class="block">
+    <button formType="submit" type="primary" bind>退出</button>
+  </view>
+</view>
