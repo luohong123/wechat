@@ -1,10 +1,12 @@
 <!--个人信息-->
 
 <view class="page">
-  <view class="page__hd">
-    <text class="page__title">image</text>
-    <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
-    <text class="page__desc">图片</text>
+  <view class="page-hd">
+    <image class="profile-avatar" mode="{{item.mode}}" src="{{avatar}}"></image>
+    <view class="head-info">
+      <text class="page-title block">张三</text>
+      <text class="page-desc block">员工号:123456677</text>
+    </view>
   </view>
    <view class="my-item">
     <navigator url="/pages/more/more" hover-class="navigator-hover">设置</navigator>

@@ -1,15 +1,44 @@
 /**个人信息**/
 .my-item{
-    width: 100%;
-    background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 750rpx center;
-    background-size: 16rpx auto,750rpx auto;
-    margin: 20rpx 0; 
-    border-bottom: 1px solid #eee;
-    height: 100rpx;
-    line-height: 100rpx;
-    padding-left: 100rpx;
+    width:100%;
+    margin:20rpx 0;
+    border-bottom:1px solid #eee;
+    height:100rpx;
+    line-height:100rpx;
+    position: relative;
+}
+.my-item::before{
+    content: '\e603';
+    position: absolute;
+    right: 10rpx;
+    top: 0;
+    font-family:"iconfont";
 }
 .block button{
     width:100%;
     display:block;
+}
+.page-hd{
+    display: flex;
+    flex-direction:row;
+}
+.profile-avatar{
+    width:100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background: #e1e1e1;
+}
+.block{
+    display: block;
+}
+.head-info{
+    display: block;
+    margin-left: 20rpx;
+}
+.page-title{
+    color: #333333;
+    font-weight: 700;
+}
+.page-desc{
+    color: #999999;
 }
