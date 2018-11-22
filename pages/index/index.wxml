@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container sigin-container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -22,6 +22,7 @@
         <icon class="iconfont icon-mima1"></icon>
       </label>
       <input name="password" password="true" placeholder="请输入密码" />
+      <text>用户名或密码错误</text>
     </view>
     <view class="btn-area">
       <button formType="submit" type="primary">登录</button>

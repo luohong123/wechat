@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const API=require('../../utils/api');
 Page({
   data: {
     motto: '我爱查工资条',
@@ -11,6 +11,15 @@ Page({
     login:'/images/login.jpg'
   },
   onLoad: function () {
+    var that = this;
+        // 使用 Mock
+        API.ajax('', function (res) {
+            //这里既可以获取模拟的res
+            console.log(res)
+            that.setData({
+                list:res.data
+            })
+        });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -47,11 +56,24 @@ Page({
     })
   }, 
   goLoginPageHome: function(e) {
-    wx.switchTab({
-      url: "../home/home"
-    })
+    // if(validate()){
+      wx.switchTab({
+        url: "../home/home"
+      })
+    // }else{
+    //   alert("登陆失败！");
+    // }
+   
+  },
+  validate:function(e){
+    if(1==1){
+      return true;
+    }else{
+      return false;
+    }
   },
   formReset:function(){
 
   }
+
 })

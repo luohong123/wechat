@@ -1,2 +1,42 @@
 <!--工资-->
-wages
+<view class="section">
+  <view class="section-title">工资查询期间</view>
+</view>
+<view class="my-item">
+  <picker mode="date" value="{{startDate}}" start="2015-09-01" end="2017-09-01" bindchange="startDateChange">
+    <view class="picker">
+      开始日期: {{startDate}}
+    </view>
+  </picker>
+</view>
+<view class="my-item">
+    <picker mode="date" value="{{endDate}}" start="2015-09-01" end="2017-09-01" bindchange="endDateChange">
+        <view class="picker">
+        结束日期: {{endDate}}
+        </view>
+    </picker>
+</view>
+<!--工资列表-->
+<view class="table-title">工资列表</view>
+<view class="table-list">
+  <view class="table-row table-th">
+    <view class="table-cell table-num">序号</view>
+    <view class="table-cell">月份</view>
+    <view class="table-cell">员工号员工号员工号员工号员工号</view>
+    <view class="table-cell">员工号员工号员工号员工号员工号</view>
+    <view class="table-cell">员工号员工号员工号员工号员工号</view>
+    <view class="table-cell">员工号员工号员工号员工号</view>
+    <view class="table-cell">员工号员工号员工号员工号</view>
+  </view>
+  <block>
+    <view class="table-row table-tr">
+        <view class="table-cell table-num">1</view>
+        <view class="table-cell">2</view>
+        <view class="table-cell">3</view>
+        <view class="table-cell">3</view>
+        <view class="table-cell">3</view>
+        <view class="table-cell">3</view>
+        <view class="table-cell">3</view>
+    </view>
+  </block>
+</view>

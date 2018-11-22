@@ -1,27 +1,52 @@
 <!--个人信息-->
 
-<view class="page">
-  <view class="page__hd">
-    <text class="page__title">image</text>
-    <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
-    <text class="page__desc">图片</text>
+<view class="page profile-container">
+  <navigator class="page-hd" hover-class="navigator-hover">
+    <view class="page-hd-left">
+      <image class="profile-avatar" mode="{{item.mode}}" src="{{src}}"></image>
+    </view>
+    <view class="page-hd-right">
+      <text class="page-title">姓名</text>
+      <text class="page-desc">图片</text>
+    </view>
+  </navigator>
+  <view class="my-item my-item-mt">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-setting'></text>
+      <text class="my-item-text">设置</text>
+    </navigator>
   </view>
    <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">设置</navigator>
-  </view>
-   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">收藏</navigator>
-  </view>
-  <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">关于我们</navigator>
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-collection'></text>
+      <text class="my-item-text">收藏</text>
+    </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">修改密码</navigator>
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-aboutus'></text>
+      <text class="my-item-text">关于我们</text>
+    </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">绑定手机号</navigator>
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-resetpwd'></text>
+      <text class="my-item-text">修改密码</text>
+    </navigator>
   </view>
-  <view class="block">
+  <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-iphone'></text>
+      <text class="my-item-text">绑定手机号</text>
+    </navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/more/more" hover-class="navigator-hover">
+      <text class='iconfont icon-svg svg-feedback'></text>
+      <text class="my-item-text">反馈</text>
+    </navigator>
+  </view>
+  <view class="signup-btn block">
     <button formType="submit" type="primary" bindtap="signOut">退出</button>
   </view>
 </view>

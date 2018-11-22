@@ -5,9 +5,11 @@
     <image src="{{swiper}}" class="home-image" mode="cover"></image>
   </view>
   <view class="flex-wrap">
-    <view class="flex-item" wx:for="{{navs}}">
+    <view wx:for="{{navs}}" class="flex-item">
+      <navigator>
         <image src="{{item.image}}" class="nav-image"></image>
         <text class="nav-text">{{item.text}}</text>
+      </navigator>
     </view>
   </view>
 </view>
@@ -21,7 +23,7 @@
 开始日期
 结束日期
 发工资
-帮助
+帮助11
 意见反馈
 
 角色选择 ：员工、财务人员、管理员-->

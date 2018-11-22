@@ -1,1 +1,51 @@
 /**工资**/
+page {
+  height: 100%;
+  background: #eeeeee;
+}
+.section-title {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #333333;
+  padding-left: 10px;
+}
+.my-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  background: #ffffff;
+  padding-left: 10px;
+}
+.table-list {
+  background: #ffffff;
+  width: 100%;
+  overflow: auto;
+}
+.table-title {
+  color: #333333;
+  font-weight: bold;
+}
+.table-row {
+  border-bottom: 1px solid #eeeeee;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.table-th {
+  width: 100%;
+  background: #3366FF;
+}
+.table-tr {
+  width: 100%;
+}
+.table-cell {
+  border-right: 1px solid #eeeeee;
+  padding: 2px;
+  width: 500rpx;
+}
+.table-num {
+  width: 60px;
+}

@@ -1,4 +1,7 @@
 /**index.wxss**/
+.sigin-container{
+  padding:80rpx 80rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
