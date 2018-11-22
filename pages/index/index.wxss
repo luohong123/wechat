@@ -2,6 +2,9 @@
 .sigin-container{
   padding:80rpx 80rpx;
 }
+.page{
+  padding:40rpx 80rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@
 .usermotto {
 
 }
-.login-input{
+.login-input {
   position:relative;
 }
 .login-input input{
@@ -34,7 +37,7 @@
   left:0;
   top:0;
 }
-.login-input-mt{
+.login-input-mt {
   margin-top:40rpx;
 }
 .btn-area{
