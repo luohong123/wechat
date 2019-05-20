@@ -15,7 +15,9 @@ button{
 button[type=primary] {
   background-color:#EE2B7A;
 }
+button[type=disabled] {
 
+}
 
 .button-hover[type=primary] {
   background-color:#EE2B7A;

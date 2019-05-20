@@ -42,7 +42,7 @@
 }
 .btn-area{
   width:100%;
-  margin-top:100rpx;
+  margin-top:80rpx;
 }
 .btn-area button{
   width:100%;
@@ -86,4 +86,10 @@ input {
   font-size:14px;
   color:#999999;
   text-align:center;
+}
+.sigin-error {
+  color: red;
+  display:block;
+  text-align:right;
+  margin-top:5px;
 }

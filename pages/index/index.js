@@ -1,25 +1,28 @@
 //index.js
 //获取应用实例
 const app = getApp()
-const API=require('../../utils/api');
+const API = require('../../utils/api');
 Page({
   data: {
     motto: '我爱查工资条',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    login:'/images/login.jpg'
+    login: '/images/login.jpg',
+    disabled: true,
+    siginError: 'N'
   },
+
   onLoad: function () {
     var that = this;
-        // 使用 Mock
-        API.ajax('', function (res) {
-            //这里既可以获取模拟的res
-            console.log(res)
-            that.setData({
-                list:res.data
-            })
-        });
+    // 使用 Mock
+    API.ajax('', function (res) {
+      //这里既可以获取模拟的res
+      console.log(res)
+      that.setData({
+        list: res.data
+      })
+    });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -47,6 +50,42 @@ Page({
       })
     }
   },
+  /**
+   * 用户名 键盘输入时触发
+   * @param {*} e 
+   */
+  bindKeyEmployeeId: function (e) {
+    this.setData({
+      employeeId: e.detail.value
+    })
+    if (this.data.employeeId !== undefined && this.data.employeeId !== null && this.data !== '' &&
+      this.data.password !== undefined && this.data.password !== null && this.password !== '') {
+      this.setData({
+        disabled: true,
+        siginError: 'N'
+      });
+    }
+  },
+  /**
+   * 密码 键盘输入时触发
+   * @param {*} e 
+   */
+  bindKeyPassword: function (e) {
+    this.setData({
+      password: e.detail.value
+    })
+    if (this.data.employeeId !== undefined && this.data.employeeId !== null && this.data !== '' &&
+      this.data.password !== undefined && this.data.password !== null && this.password !== '') {
+      this.setData({
+        disabled: false,
+        siginError: 'N'
+      })
+    }
+  },
+  /**
+   * 获取用户信息
+   * @param {*} e 
+   */
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -54,26 +93,36 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }, 
-  goLoginPageHome: function(e) {
-    // if(validate()){
-      wx.switchTab({
-        url: "../home/home"
+  },
+  /**
+   * 员工号和密码验证通过跳转到首页
+   * @param {*} e 
+   */
+  goLoginPageHome: function (e) {
+    var that = this;
+    API.ajax('', function (res) {
+      var userInfoArr = res.user;
+      userInfoArr.forEach(function (item) {
+        if (item.employeeId === that.data.employeeId && item.password === that.data.password) {
+          that.setData({
+            siginError: 'N'
+          });
+          app.globalData.employeeObj = item;
+          app.globalData.employeeId = that.data.employeeId;
+          wx.switchTab({
+            url: "../home/home"
+          })
+        } else {
+          that.setData({
+            siginError: 'Y'
+          });
+        }
       })
-    // }else{
-    //   alert("登陆失败！");
-    // }
-   
+    })
   },
-  validate:function(e){
-    if(1==1){
-      return true;
-    }else{
-      return false;
-    }
-  },
-  formReset:function(){
+  formReset: function () {
 
-  }
+  },
+
 
 })

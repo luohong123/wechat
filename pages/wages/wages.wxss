@@ -30,13 +30,16 @@ page {
 .table-row {
   border-bottom: 1px solid #eeeeee;
   display:flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   white-space: nowrap;
 }
 .table-th {
   width: 100%;
-  background: #3366FF;
+}
+.table-th .table-cell,.table-th .table-num {
+  background: #EE2B7A;
+  color: #ffffff;
 }
 .table-tr {
   width: 100%;
@@ -44,8 +47,17 @@ page {
 .table-cell {
   border-right: 1px solid #eeeeee;
   padding: 2px;
-  width: 500rpx;
+  min-width: 200px;
+  height:30px;
+  line-height: 30px;
 }
-.table-num {
+.table-cell .table-num  {
   width: 60px;
+  max-width:60px;
+}
+.primary-btn {
+  margin: 40rpx;  
+}
+.table-even .table-cell,.table-even .table-num{
+  background: #E6F3F9;
 }

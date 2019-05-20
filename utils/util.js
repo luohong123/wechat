@@ -14,6 +14,9 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const format = function a(){
+
+}
 module.exports = {
   formatTime: formatTime
 }

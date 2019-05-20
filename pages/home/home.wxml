@@ -5,8 +5,8 @@
     <image src="{{swiper}}" class="home-image" mode="cover"></image>
   </view>
   <view class="flex-wrap">
-    <view wx:for="{{navs}}" class="flex-item">
-      <navigator>
+    <view wx:for="{{navs}}" class="flex-item" wx:key="navsListId">
+      <navigator url="{{item.url}}" open-type="{{item.type}}">
         <image src="{{item.image}}" class="nav-image"></image>
         <text class="nav-text">{{item.text}}</text>
       </navigator>

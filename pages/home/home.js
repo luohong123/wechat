@@ -7,35 +7,43 @@ Page({
         navs:[{
           image:"/images/daikuan.png",
           text:"查工资条",
-          url:""
+          url:"../wages/wages",
+          type:'switchTab'
         },{
           image:"/images/licai.png",
           text:"发工资",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/suiyicun.png",
           text:"投资理财",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/tahangqia.png",
           text:"投资理财",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/tongzhicundan.png",
           text:"投资理财",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/zhuanzhanghuikuan.png",
           text:"更多",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/zhuanzhanghuikuan.png",
           text:"更多",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         },{
           image:"/images/zhuanzhanghuikuan.png",
           text:"更多",
-          url:""
+          url:"../building/building",
+          type:'navigate'
         }],
         swiper:"/images/home-bg.png"
       },

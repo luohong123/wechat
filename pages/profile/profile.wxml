@@ -1,52 +1,51 @@
 <!--个人信息-->
-
 <view class="page profile-container">
   <navigator class="page-hd" hover-class="navigator-hover">
     <view class="page-hd-left">
-      <image class="profile-avatar" mode="{{item.mode}}" src="{{src}}"></image>
+      <image class="profile-avatar" mode="{{item.mode}}" src="{{userInfo.avatarUrl}}"></image>
     </view>
     <view class="page-hd-right">
-      <text class="page-title">姓名</text>
-      <text class="page-desc">图片</text>
+      <text class="page-title">{{userName}},你好！</text>
+      <text class="page-desc">员工号{{desc}}</text>
     </view>
   </navigator>
   <view class="my-item my-item-mt">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-setting'></text>
       <text class="my-item-text">设置</text>
     </navigator>
   </view>
    <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-collection'></text>
       <text class="my-item-text">收藏</text>
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-aboutus'></text>
       <text class="my-item-text">关于我们</text>
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-resetpwd'></text>
       <text class="my-item-text">修改密码</text>
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-iphone'></text>
       <text class="my-item-text">绑定手机号</text>
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="/pages/more/more" hover-class="navigator-hover">
+    <navigator url="/pages/building/building" hover-class="navigator-hover">
       <text class='iconfont icon-svg svg-feedback'></text>
       <text class="my-item-text">反馈</text>
     </navigator>
   </view>
   <view class="signup-btn block">
-    <button formType="submit" type="primary" bindtap="signOut">退出</button>
+    <button formType="submit" type="primary"   bindtap="signOut">退出</button>
   </view>
 </view>

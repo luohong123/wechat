@@ -5,38 +5,126 @@
 <view class="my-item">
   <picker mode="date" value="{{startDate}}" start="2015-09-01" end="2017-09-01" bindchange="startDateChange">
     <view class="picker">
-      开始日期: {{startDate}}
+      期间选择: {{startDate}}  
     </view>
   </picker>
-</view>
-<view class="my-item">
-    <picker mode="date" value="{{endDate}}" start="2015-09-01" end="2017-09-01" bindchange="endDateChange">
-        <view class="picker">
-        结束日期: {{endDate}}
-        </view>
-    </picker>
+  <button formType="submit" type="primary"   bindtap="search">查询</button>
 </view>
 <!--工资列表-->
 <view class="table-title">工资列表</view>
 <view class="table-list">
   <view class="table-row table-th">
     <view class="table-cell table-num">序号</view>
-    <view class="table-cell">月份</view>
-    <view class="table-cell">员工号员工号员工号员工号员工号</view>
-    <view class="table-cell">员工号员工号员工号员工号员工号</view>
-    <view class="table-cell">员工号员工号员工号员工号员工号</view>
-    <view class="table-cell">员工号员工号员工号员工号</view>
-    <view class="table-cell">员工号员工号员工号员工号</view>
+    <view class="table-cell">员工号</view>
+    <view class="table-cell">日期</view>
+    <view class="table-cell">部门名称</view>
+    <view class="table-cell">银行卡号</view>
+    <view class="table-cell">档案工资(元)</view>
+    <view class="table-cell">岗位工资</view>
+    <view class="table-cell">绩效工资</view>
+    <view class="table-cell">奖金</view>
+    <view class="table-cell">地区补贴</view>
+    <view class="table-cell">交通补助/采暖补</view>
+    <view class="table-cell">加班费</view>
+    <view class="table-cell">独生子女费</view>
+    <view class="table-cell">工资补发</view>
+    <view class="table-cell">其他补发</view>
+    <view class="table-cell">笔记本补贴</view>
+    <view class="table-cell">周报扣款</view>
+    <view class="table-cell">病事假试用期等</view>
+    <view class="table-cell">应付工资</view>
+    <view class="table-cell">养老保险个人</view>
+    <view class="table-cell">医疗保险个人</view>
+    <view class="table-cell">失业保险个人</view>
+    <view class="table-cell">公积金个人</view>
+    <view class="table-cell">其他保险个人</view>
+    <view class="table-cell">年金个人</view>
+    <view class="table-cell">个人缴费福利合计</view>
+    <view class="table-cell">计税工资</view>
+    <view class="table-cell">减除费用</view>
+    <view class="table-cell">税率</view>
+    <view class="table-cell">扣除数</view>
+    <view class="table-cell">工资薪金个税</view>
+    <view class="table-cell">税后实发</view>
+    <view class="table-cell">其它扣款</view>
+    <view class="table-cell">其他</view>
+    <view class="table-cell">实发扣款</view>
   </view>
-  <block>
-    <view class="table-row table-tr">
-        <view class="table-cell table-num">1</view>
-        <view class="table-cell">2</view>
-        <view class="table-cell">3</view>
-        <view class="table-cell">3</view>
-        <view class="table-cell">3</view>
-        <view class="table-cell">3</view>
-        <view class="table-cell">3</view>
+  <block wx:for="{{pageList}}" wx:for-index="index" wx:key="wageListId">
+    <view class="table-row table-tr table-even" wx:if="{{index%2===0}}" >
+        <view class="table-cell table-num">{{index+1}}</view>
+        <view class="table-cell">{{item.employeeId}}</view>
+        <view class="table-cell">{{item.date}}</view>
+        <view class="table-cell">{{item.departement}}</view>
+        <view class="table-cell">{{item.bankcard}}</view>
+        <view class="table-cell">{{item.payableWage}}</view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+    </view>
+    <view wx:else class="table-row table-tr">
+        <view class="table-cell table-num">{{index+1}}</view>
+        <view class="table-cell">{{item.employeeId}}</view>
+        <view class="table-cell">{{item.date}}</view>
+        <view class="table-cell">{{item.departement}}</view>
+        <view class="table-cell">{{item.bankcard}}</view>
+        <view class="table-cell">{{item.payableWage}}</view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view> 
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
+        <view class="table-cell"></view>
     </view>
   </block>
 </view>

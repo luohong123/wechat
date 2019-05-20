@@ -27,7 +27,22 @@ function ajax(data = '', fn, method = "get", header = {}) {
                 'marketing_stop': '@now()',
                 'price': '@integer(100,2000)',//现价，单位：分  
                 'original_price': '@integer(100,3000)'
-            }]
+            }],
+            'user':[
+                {id:'01',employeeId:'001',username:'城城',userCode:'chengcheng',password:'123456'},
+                {id:'01',employeeId:'201703186366',username:'城城',userCode:'chengcheng',password:'123456'},
+                {id:'02',employeeId:'201703186367',username:'小檀',userCode:'xiaotan',password:'123456'},
+                {id:'03',employeeId:'201703186368',username:'镜心',userCode:'jingxin',password:'123456'},
+            ],
+            'wage':[
+                {employeeId:'001',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201810',payableWage:'40001',payWage:'32001'},
+                {employeeId:'001',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201811',payableWage:'40002',payWage:'32002'},
+                {employeeId:'001',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201812',payableWage:'40003',payWage:'32003'},
+                {employeeId:'201703186366',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201811',payableWage:'40000',payWage:'32000'},
+                {employeeId:'201703186367',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201811',payableWage:'40000',payWage:'32000'},
+                {employeeId:'201703186368',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201811',payableWage:'40000',payWage:'32000'},
+                {employeeId:'201703186366',departement:'开发实施部',bankcard:'xxxxxxxxxx',date:'201810',payableWage:'100',payWage:'80'}
+            ]
         })
         // 输出结果
        // console.log(JSON.stringify(res, null, 2))

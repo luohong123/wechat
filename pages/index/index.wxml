@@ -1,8 +1,7 @@
 <!--index.wxml-->
 <view class="container sigin-container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
+    <block>
       <image class="userinfo-avatar" src="{{login}}" mode="cover"></image>
       <text class="userinfo-nickname"></text>
     </block>
@@ -15,17 +14,18 @@
       <label class="login-icon-wrap">
         <icon class="iconfont icon-xingmingyonghumingnicheng"></icon>
       </label>
-      <input name="input" type="text" placeholder="请输入员工号" />
+      <input name="input" bindinput="bindKeyEmployeeId" type="text" placeholder="请输入员工号" />
     </view>
     <view class="section login-input login-input-mt">
       <label class="login-icon-wrap"> 
         <icon class="iconfont icon-mima1"></icon>
       </label>
-      <input name="password" password="true" placeholder="请输入密码" />
-      <text>用户名或密码错误</text>
+      <input name="password"  bindinput="bindKeyPassword" password="true" placeholder="请输入密码" />
+      <text>测试号:001 密码：123456</text>
+      <text wx:if="{{siginError!=='N'}}" class="sigin-error">用户名或密码错误</text>
     </view>
     <view class="btn-area">
-      <button formType="submit" type="primary">登录</button>
+      <button formType="submit" type="primary" disabled="{{disabled}}">登录</button>
     </view>
   </form>
   <text class="footer">版权归北京东软越通软件技术有限公司所有</text>
